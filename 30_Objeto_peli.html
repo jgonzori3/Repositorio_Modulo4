@@ -1,0 +1,28 @@
+
+<!doctype html><html><head> <meta charset="utf-8">
+    <script type="text/javascript">
+
+        // MODELO
+        let peli = { titulo: "Tiburón", director: "Steven Spielberg" };
+
+        // VISTA
+        function showView (p) {
+            return `La película del año 1975 fué 
+            <b>${p.titulo}</b>, dirigida por <b>${p.director}</b>!`;
+        };
+
+        // CONTROLADOR
+        function showContr () {
+            document.getElementById('view').innerHTML = showView(peli);
+        };
+
+        // EVENTO
+        document.addEventListener('click', showContr);
+    </script>
+</head>  
+<body>
+    <button id="b1">Película del año 1975</button>
+    <div id="view"></div>
+</body>
+</html>
+
